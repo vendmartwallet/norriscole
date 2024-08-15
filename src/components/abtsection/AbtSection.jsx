@@ -3,7 +3,7 @@ import ServiceUtils from "../serviceUtils/ServiceUtils";
 
 const AbtSection = () => {
   return (
-    <div className=" px-5 lg:px-20 mt-16" data-aos="fade-right">
+    <div id="About"className=" px-5 lg:px-20 mt-32" data-aos="fade-right">
       <div
         className="title font-semibold text-2xl text-center pb-16"
         data-aos="fade-up"

@@ -47,7 +47,7 @@ const HeroCarousel = () => {
         {images.map((image, index) => (
           <div key={index}>
             <div
-              className="h-[80vh] bg-cover bg-center flex items-center mx-auto"
+              className="h-[90vh] bg-cover bg-center flex items-center mx-auto"
               style={{ backgroundImage: `url(${image})` }}
             >
               <div className="text-center p-8 rounded-lg bg-white opacity-80">

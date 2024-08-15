@@ -3,7 +3,7 @@ import ContactSection from '../../components/contactSection/ContactSection'
 
 const ContactUs = () => {
   return (
-    <div>
+    <div id="Contact">
         <ContactSection />
     </div>
   )

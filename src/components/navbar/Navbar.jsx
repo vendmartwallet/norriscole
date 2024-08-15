@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoMenuSharp } from "react-icons/io5";
 import Logo from "../../assets/colelogonew.png";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex sticky top-0 z-50 bg-[#F3FEFF] h-24 pr-6 lg:px-16 justify-between items-center border-b shadow-custom-pink ">
+    <div className="flex fixed w-full top-0 z-50 bg-[#F3FEFF] h-24 pr-6 lg:px-16 justify-between items-center border-b shadow-custom-pink ">
       <div className="logo">
         <img src={Logo} alt="" width="97" height="30" />
       </div>
@@ -25,19 +25,65 @@ const Navbar = () => {
       <div className="navs hidden lg:block">
         <ul className="flex items-center justify-center text-base font-light gap-12">
           <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-            <Link to="/">Home</Link>
+            <ScrollLink
+              to="Home"
+              spy={true}
+              smooth={true}
+              offset={30}
+              onClick={toggleNav}
+              duration={500}
+            >
+              Home
+            </ScrollLink>
           </li>
           <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-            <Link to="/about">About</Link>
+            <ScrollLink
+              to="About"
+              spy={true}
+              smooth={true}
+              offset={30}
+              onClick={toggleNav}
+              duration={500}
+            >
+              About
+            </ScrollLink>
           </li>
           <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-            <Link to="/services"> Services</Link>
+            <ScrollLink
+              to="Services"
+              spy={true}
+              smooth={true}
+              offset={30}
+              onClick={toggleNav}
+              duration={500}
+            >
+              {" "}
+              Services
+            </ScrollLink>
           </li>
           <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-            <Link to="/testimonial">Testimonial</Link>
+            <ScrollLink
+              to="Testimonial"
+              spy={true}
+              smooth={true}
+              offset={30}
+              onClick={toggleNav}
+              duration={500}
+            >
+              Testimonial
+            </ScrollLink>
           </li>
           <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-            <Link to="/contact">Contact</Link>
+            <ScrollLink
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={30}
+              onClick={toggleNav}
+              duration={500}
+            >
+              Contact
+            </ScrollLink>
           </li>
           <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-copy">
             81-468-82781
@@ -76,19 +122,65 @@ const Navbar = () => {
           <div className="navs mt-5">
             <ul className="flex flex-col px-4 justify-center text-base font-normal gap-8">
               <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-                <Link to="/">Home</Link>
+                <ScrollLink
+                  to="Home"
+                  spy={true}
+                  smooth={true}
+                  offset={30}
+                  onClick={toggleNav}
+                  duration={500}
+                >
+                  Home
+                </ScrollLink>
               </li>
               <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-                <Link to="/about">About</Link>
+                <ScrollLink
+                  to="About"
+                  spy={true}
+                  smooth={true}
+                  offset={30}
+                  onClick={toggleNav}
+                  duration={500}
+                >
+                  About
+                </ScrollLink>
               </li>
               <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-                <Link to="/services"> Services</Link>
+                <ScrollLink
+                  to="Services"
+                  spy={true}
+                  smooth={true}
+                  offset={30}
+                  onClick={toggleNav}
+                  duration={500}
+                >
+                  {" "}
+                  Services
+                </ScrollLink>
               </li>
               <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-                <Link to="/testimonial">Testimonial</Link>
+                <ScrollLink
+                  to="Testimonial"
+                  spy={true}
+                  smooth={true}
+                  offset={30}
+                  onClick={toggleNav}
+                  duration={500}
+                >
+                  Testimonial
+                </ScrollLink>
               </li>
               <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-pointer">
-                <Link to="/contact">Contact</Link>
+                <ScrollLink
+                  to="Contact"
+                  spy={true}
+                  smooth={true}
+                  offset={30}
+                  onClick={toggleNav}
+                  duration={500}
+                >
+                  Contact
+                </ScrollLink>
               </li>
               <li className=" hover:border-b-2 hover:border-[#FF3F8E] transition-all hover:cursor-copy">
                 81-468-82781

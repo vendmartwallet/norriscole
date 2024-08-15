@@ -3,7 +3,7 @@ import TestimonialSec from '../../components/testimonialSec/TestimonialSec'
 
 const Testimonial = () => {
   return (
-    <div>
+    <div id="Testimonial">
         <TestimonialSec />
     </div>
   )

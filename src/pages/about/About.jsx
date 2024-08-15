@@ -3,7 +3,7 @@ import AbtSection from '../../components/abtsection/AbtSection'
 
 const About = () => {
   return (
-    <div>
+    <div >
       <AbtSection />
     </div>
   )
