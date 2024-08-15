@@ -3,7 +3,7 @@ import React from "react";
 const ServicesSection = () => {
   return (
     <>
-      <div className="px-6 lg:px-0 mt-24 overflow-x-hidden">
+      <div className="px-6 lg:px-0 mt-24 overflow-hidden">
         <div className=" flex flex-col gap-7 text-center">
           <h1 className=" font-semibold text-4xl" data-aos="fade-right">
             Specialized Service Excellence

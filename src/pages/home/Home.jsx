@@ -19,7 +19,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className=" overflow-hidden">
       <Navbar />
       <Hero />
       <ChatBot />

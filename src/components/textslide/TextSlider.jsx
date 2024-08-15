@@ -31,7 +31,7 @@ const TextSlider = () => {
   }, [slides.length]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-[80vh] bg-[#1a1a1a]">
+    <div className="flex flex-col items-center justify-center h-[80vh] bg-[#1a1a1a] overflow-hidden">
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-[#FFFFFF] text-xl font-medium mb-4" data-aos="fade-right">WHAT THEY'RE SAYING</h2>
         <div className="border border-gray-300 p-10 bg-[#1a1a1a] text-[#FFFFFF] rounded-lg shadow-md" data-aos="fade-left">
