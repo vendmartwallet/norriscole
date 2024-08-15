@@ -47,7 +47,7 @@ const HeroCarousel = () => {
         {images.map((image, index) => (
           <div key={index}>
             <div
-              className="h-[90vh] bg-cover bg-center flex items-center mx-auto"
+              className="h-[85vh] bg-cover bg-center flex items-center mx-auto"
               style={{ backgroundImage: `url(${image})` }}
             >
               <div className="text-center p-8 rounded-lg bg-white opacity-80">
@@ -57,7 +57,10 @@ const HeroCarousel = () => {
                 >
                   Sparkling Clean, Every Time
                 </h1>
-                <p className="text-[#4d2033da] text-lg mb-8 lg:w-[70%] mx-auto" data-aos="fade-up">
+                <p
+                  className="text-[#4d2033da] text-lg mb-8 lg:w-[70%] mx-auto"
+                  data-aos="fade-up"
+                >
                   "Leave the dirt to us! Our professional cleaners ensure your
                   space sparkles, giving you the peace of mind you deserve.
                   Whether it’s your home or office, our reliable and experienced
@@ -67,8 +70,9 @@ const HeroCarousel = () => {
                 </p>
                 <a
                   href="#"
-                  className="bg-pink-600 text-white font-bold py-2 px-6 rounded hover:bg-pink-700 transition" 
-                  data-aos="fade-left">
+                  className="bg-pink-600 text-white font-bold py-2 px-6 rounded hover:bg-pink-700 transition"
+                  data-aos="fade-left"
+                >
                   BOOK NOW
                 </a>
               </div>

@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex fixed w-full top-0 z-50 bg-[#F3FEFF] h-24 pr-6 lg:px-16 justify-between items-center border-b shadow-custom-pink ">
+    <div className="flex sticky top-0 z-50 bg-[#F3FEFF] h-22 pr-6 lg:px-16 justify-between items-center border-b shadow-custom-pink ">
       <div className="logo">
         <img src={Logo} alt="" width="97" height="30" />
       </div>
