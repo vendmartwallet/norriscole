@@ -10,12 +10,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1500, // Animation duration in milliseconds
-      easing: 'ease', // Easing function for the animation
-      once: true,     // Whether animation should happen only once - while scrolling down
+      easing: "ease", // Easing function for the animation
+      once: true, // Whether animation should happen only once - while scrolling down
     });
   }, []);
 
