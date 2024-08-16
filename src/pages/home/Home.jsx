@@ -8,6 +8,7 @@ import Testimonial from "../testimonial/Testimonial";
 import ContactUs from "../contactUs/ContactUs";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const Home = () => {
       <Services />
       <Testimonial />
       <ContactUs />
+      <Footer />
     </div>
   );
 };
